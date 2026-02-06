@@ -34,8 +34,7 @@ public class PlayerController : MonoBehaviour
 
         if (shootAction.IsPressed())
         {
-            var food = Instantiate(foodPrefab, transform.position, Quaternion.identity);
-            Destroy(food, 1f);
+            Instantiate(foodPrefab, transform.position, Quaternion.identity);
         }
     }
     private void OnDrawGizmos()
